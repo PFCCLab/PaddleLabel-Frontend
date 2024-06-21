@@ -237,6 +237,7 @@ const Page: React.FC = () => {
     onMouseUp: () => {
       if (interactorData.active) return;
       annHistory.record({ annos: annotation.all, currAnno: annotation.curr });
+      savefinlyList();
     },
     frontendIdOps: { frontendId: frontendId, setFrontendId: setFrontendId },
     model: model,

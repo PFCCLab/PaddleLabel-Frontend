@@ -6,7 +6,7 @@ import Title from 'antd/lib/typography/Title';
 import { history } from 'umi';
 import styles from './index.less';
 import serviceUtils from '@/services/serviceUtils';
-import { createInfo, camel2snake, IntlInit } from '@/services/utils';
+import { createInfo, camel2snake, IntlInit, sampleApi, snake2camel } from '@/services/utils';
 import { ProjectUtils } from '@/services/utils';
 import { IntlInitJsx } from '@/components/PPIntl';
 import type { ImportOption } from '@/services/web';
@@ -267,7 +267,7 @@ const PPCreator: React.FC<PPCreatorProps> = (props) => {
               </Form.Item>
               {renderImportOptions()}
 
-              {/* <Form.Item
+              <Form.Item
                 name="labelFormat"
                 label={
                   <p
@@ -334,7 +334,7 @@ const PPCreator: React.FC<PPCreatorProps> = (props) => {
                     </Radio>
                   ))}
                 </Radio.Group>
-              </Form.Item> */}
+              </Form.Item>
 
               {/* <Form.Item
                 name="segMaskType"
