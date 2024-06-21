@@ -181,6 +181,7 @@ const Page: React.FC = () => {
     setCurrentAnnotation(anno);
     annotation.setAll(annotation.all);
     annotation.pushToBackend(data.curr?.dataId, annotation.all);
+    savefinlyList();
   };
 
   const onAnnotationModifyUP = (anno: Annotation) => {
@@ -312,6 +313,7 @@ const Page: React.FC = () => {
   };
   const onCtrlS = () => {
     annotation.pushToBackend(data.curr?.dataId);
+    savefinlyList();
   };
   const onShiftCtrlC = () => {
     console.log('onShiftCtrlC');
@@ -436,6 +438,7 @@ const Page: React.FC = () => {
           imgSrc="./pics/buttons/save.png"
           onClick={() => {
             annotation.pushToBackend(data.curr?.dataId);
+            savefinlyList();
           }}
           disabled={interactorData.active}
         >
