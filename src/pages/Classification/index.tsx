@@ -18,7 +18,7 @@ import useImage from 'use-image';
 import PPSetButton from '@/components/PPLabelPage/PPButtonSet';
 
 const port = window.location.port == '8000' ? '1234' : window.location.port;
-const baseUrl = `http://${window.location.hostname}:${port}/`;
+const baseUrl = `http://${window.location.hostname}:${port}`;
 const Page: React.FC = () => {
   const page = useRef<pageRef>(null);
   const intl = IntlInit('pages.classification');

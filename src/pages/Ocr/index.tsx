@@ -24,7 +24,7 @@ import PPProgress from '@/components/PPLabelPage/PPProgress';
 import { IntlInitJsx } from '@/components/PPIntl';
 import PPSetButton from '@/components/PPLabelPage/PPButtonSet';
 const port = window.location.port == '8000' ? '1234' : window.location.port;
-const baseUrl = `http://${window.location.hostname}:${port}/`;
+const baseUrl = `http://${window.location.hostname}:${port}`;
 export type DrawToolType = {
   polygon: PPDrawToolRet;
   brush: undefined;
