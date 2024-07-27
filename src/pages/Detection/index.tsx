@@ -21,7 +21,7 @@ import { IntlInitJsx } from '@/components/PPIntl';
 import PPSetButton from '@/components/PPLabelPage/PPButtonSet';
 import Keyevent from 'react-keyevent';
 const port = window.location.port == '8000' ? '1234' : window.location.port;
-const baseUrl = `http://${window.location.hostname}:${port}/`;
+const baseUrl = `http://${window.location.hostname}:${port}`;
 const Page = () => {
   // todo: change to use annotation
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -757,7 +757,7 @@ const Page = () => {
         </PPToolBarButton>
         <PPToolBarButton
           imgSrc="./pics/buttons/intelligent_interaction.png"
-          disabled={!otherSetting?.labelMapping}
+          // disabled={!otherSetting?.labelMapping}
           onClick={() => {
             onPredicted(image);
           }}
