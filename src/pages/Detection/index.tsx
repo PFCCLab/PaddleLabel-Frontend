@@ -757,7 +757,7 @@ const Page = () => {
         </PPToolBarButton>
         <PPToolBarButton
           imgSrc="./pics/buttons/intelligent_interaction.png"
-          // disabled={!otherSetting?.labelMapping}
+          disabled={!otherSetting?.labelMapping}
           onClick={() => {
             onPredicted(image);
           }}
